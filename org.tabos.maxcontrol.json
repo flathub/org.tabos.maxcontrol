@@ -20,6 +20,10 @@
                     "url": "https://gitlab.com/tabos/maxcontrol.git",
                     "tag" : "v0.5.3",
                     "commit" : "f8755f940e603562743b9e77238d9b9c6322fe3b"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-convert-to-square-icon.patch"
                 }
             ]
         }
