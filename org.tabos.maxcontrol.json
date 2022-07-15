@@ -24,6 +24,10 @@
                 {
                     "type": "patch",
                     "path": "0001-convert-to-square-icon.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-update-screenshot-url.patch"
                 }
             ]
         }
