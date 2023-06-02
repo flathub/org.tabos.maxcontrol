@@ -11,6 +11,7 @@
         "--socket=wayland"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "maxcontrol",
             "buildsystem": "meson",
