@@ -1,7 +1,7 @@
 {
     "app-id": "org.tabos.maxcontrol",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "maxcontrol",
     "finish-args": [
@@ -11,6 +11,7 @@
         "--socket=wayland"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "maxcontrol",
             "buildsystem": "meson",
