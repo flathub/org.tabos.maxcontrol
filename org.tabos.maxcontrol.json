@@ -1,7 +1,7 @@
 {
     "app-id": "org.tabos.maxcontrol",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "maxcontrol",
     "finish-args": [
@@ -10,7 +10,21 @@
         "--socket=fallback-x11",
         "--socket=wayland"
     ],
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/aclocal",
+        "/share/gir-1.0",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "/share/vala",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "maxcontrol",
             "buildsystem": "meson",
@@ -18,16 +32,12 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/tabos/maxcontrol.git",
-                    "tag" : "v0.5.3",
-                    "commit" : "f8755f940e603562743b9e77238d9b9c6322fe3b"
+                    "tag" : "v0.5.4",
+                    "commit" : "275a045b3e84a37000d789465faaa3e5eb989a88"
                 },
                 {
                     "type": "patch",
-                    "path": "0001-convert-to-square-icon.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-update-screenshot-url.patch"
+                    "path": "fix_appdata.patch"
                 }
             ]
         }
