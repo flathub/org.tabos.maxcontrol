@@ -1,0 +1,14 @@
+diff --git a/data/org.tabos.maxcontrol.appdata.xml.in b/data/org.tabos.maxcontrol.appdata.xml.in
+index a012bd5..9554c2d 100644
+--- a/data/org.tabos.maxcontrol.appdata.xml.in
++++ b/data/org.tabos.maxcontrol.appdata.xml.in
+@@ -18,7 +18,6 @@
+       <caption>Control interface</caption>
+     </screenshot>
+   </screenshots>
+-  <url type="homepage">http://www.tabos.org</url>
+   <update_contact>jan.brummer@tabos.org</update_contact>
+   <translation type="gettext">maxcontrol</translation>
+   <content_rating type="oars-1.1" />
+--
+libgit2 1.7.2
