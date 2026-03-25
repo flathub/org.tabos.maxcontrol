@@ -1,7 +1,7 @@
 {
     "app-id": "org.tabos.maxcontrol",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "maxcontrol",
     "finish-args": [
@@ -12,16 +12,11 @@
     ],
     "cleanup" : [
         "/include",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
-        "/man",
-        "/share/aclocal",
         "/share/gir-1.0",
-        "/share/gtk-doc",
         "/share/man",
-        "/share/pkgconfig",
-        "/share/vala",
-        "*.la",
-        "*.a"
+        "/share/vala"
     ],
     "modules": [
         "shared-modules/libsoup/libsoup-2.4.json",
